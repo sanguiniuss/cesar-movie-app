@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: white;
+}
+
+.barraNavigazione {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.logoPrimeVideo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.scrittaPrime {
+    color: white;
+    margin-right: 4px;
+}
+
+.scrittaVideo {
+    color: #00a8e1;
+}
+
+.linkNavigazione a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.linkNavigazione a:hover {
+    text-decoration: underline;
+}
+
+.barraRicerca input {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.barraRicerca button {
+    padding: 5px 15px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.barraRicerca button:hover {
+    background-color: #b20600;
+}
+
+.areaProfilo .avatarProfilo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sezioneImmagineHero {
+    margin-top: 60px;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.sezioneImmagineHero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.involucroCarosello {
+    position: relative;
+    width: 90%;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.contenitoreFilm {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.contenitoreFilm::-webkit-scrollbar {
+    display: none;
+}
+
+.elementoFilm {
+    flex: 0 0 auto;
+    min-width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: transparent;
+    padding: 0;
+    box-shadow: none;
+}
+
+.elementoFilm img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.elementoFilm h3,
+.elementoFilm p {
+    display: none;
+}
+
+.pulsanteCarosello {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.6);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.pulsanteCarosello:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pulsanteCarosello.sinistra {
+    left: 0;
+}
+
+.pulsanteCarosello.destra {
+    right: 0;
+}
+
+.grigliaFilm {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.grigliaFilm .elementoFilm img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}

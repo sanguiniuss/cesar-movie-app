@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Video</title>
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+    <header class="barraNavigazione">
+        <div class="logoPrimeVideo">
+            <span class="scrittaPrime">prime</span><span class="scrittaVideo">video</span>
+        </div>
+        <div class="linkNavigazione">
+            <a href="#">Home</a>
+            <a href="#">Film</a>
+            <a href="#">Serie TV</a>
+            <a href="#">Sport</a>
+            <a href="#">TV in Diretta</a>
+        </div>
+        <div class="barraRicerca">
+            <input type="text" placeholder="Cerca film o serie...">
+            <button>Cerca</button>
+        </div>
+        <div class="areaProfilo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="Account" class="avatarProfilo">
+        </div>
+    </header>
+
+    <section class="sezioneImmagineHero">
+        <img src="https://image.tmdb.org/t/p/original/8YFL5QQVPy3AgrEQxNYVSgiPEbe.jpg" alt="Film Hero">
+    </section>
+
+    <h2>Film di tendenza</h2>
+    <div class="involucroCarosello">
+        <button class="pulsanteCarosello sinistra">&#10094;</button>
+        <div class="contenitoreFilm" id="listaFilm"></div>
+        <button class="pulsanteCarosello destra">&#10095;</button>
+    </div>
+
+    <h2>Consigliati per te</h2>
+    <div class="grigliaFilm" id="grigliaFilm"></div>
+
+    <script src="pagina.js"></script> 
+</body>
+</html>
